@@ -21,32 +21,27 @@
          <!-- Example of checkstyle Check usage -->
          <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="id" value="VariableDeclarationUsageDistance1" />
+        <module name="ReturnCount">
+            <property name="id" value="1"/>
+        </module>
+        
+        <module name="ReturnCount">
+            <property name="max" value="1" />
+            <property name="id" value="2"/>
+        </module>        
+        
+        <module name="ReturnCount">
+            <property name="maxForVoid" value="2" />
+            <property name="id" value="3"/>
         </module>
 
 
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="validateBetweenScopes"  value = "true"/>
-            <property name="id" value="VariableDeclarationUsageDistance2" />
+        <module name="ReturnCount">
+            <property name="max" value="1" />
+            <property name="maxForVoid" value="2" />
+            <property name="id" value="4"/>
         </module>
-
-
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="ignoreFinal"  value = "false"/>
-            <property name="id" value="VariableDeclarationUsageDistance3" />
-            </module>
-
-
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="validateBetweenScopes"  value = "true"/>
-            <property name="ignoreFinal"  value = "false"/>
-            <property name="id" value="VariableDeclarationUsageDistance4" />
-        </module>                    
+                 
         
 
          <!-- Example of sevntu.checkstyle Check usage -->
