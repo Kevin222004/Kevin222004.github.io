@@ -21,33 +21,20 @@
          <!-- Example of checkstyle Check usage -->
          <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="id" value="VariableDeclarationUsageDistance1" />
+        <module name="PackageDeclaration">
+            <property name="id" value="PackageDeclaration1" />
         </module>
 
 
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="validateBetweenScopes"  value = "true"/>
-            <property name="id" value="VariableDeclarationUsageDistance2" />
+        <module name="PackageDeclaration">
+            <property name="matchDirectoryStructure"  value = "false"/>
+            <property name="id" value="PackageDeclaration2" />
         </module>
 
-
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="ignoreFinal"  value = "false"/>
-            <property name="id" value="VariableDeclarationUsageDistance3" />
-            </module>
-
-
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="validateBetweenScopes"  value = "true"/>
-            <property name="ignoreFinal"  value = "false"/>
-            <property name="id" value="VariableDeclarationUsageDistance4" />
-        </module>                    
-        
+        <module name="PackageDeclaration">
+            <property name="matchDirectoryStructure"  value = "true"/>
+            <property name="id" value="PackageDeclaration3" />
+        </module>
 
          <!-- Example of sevntu.checkstyle Check usage -->
          <!-- <module name="NestedSwitchCheck"/> -->
