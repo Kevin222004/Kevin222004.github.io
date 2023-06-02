@@ -21,33 +21,29 @@
          <!-- Example of checkstyle Check usage -->
          <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="id" value="VariableDeclarationUsageDistance1" />
+        <module name="UnnecessaryParentheses">
+            <property name="id" value="1" />
         </module>
+                
+        <module name="UnnecessaryParentheses">
+             <property name="id" value="2" />
+             <property name="tokens" value="BOR, BAND, BXOR" />
+        </module>          
 
-
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="validateBetweenScopes"  value = "true"/>
-            <property name="id" value="VariableDeclarationUsageDistance2" />
-        </module>
-
-
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="ignoreFinal"  value = "false"/>
-            <property name="id" value="VariableDeclarationUsageDistance3" />
-            </module>
-
-
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="1"/>
-            <property name="validateBetweenScopes"  value = "true"/>
-            <property name="ignoreFinal"  value = "false"/>
-            <property name="id" value="VariableDeclarationUsageDistance4" />
-        </module>                    
+<module name="UnnecessaryParentheses">
+             <property name="id" value="3" />
+             <property name="tokens" value="BXOR" />
+        </module>            
         
+<module name="UnnecessaryParentheses">
+             <property name="id" value="4" />
+             <property name="tokens" value="BAND" />
+        </module>
+
+<module name="UnnecessaryParentheses">
+             <property name="id" value="5" />
+             <property name="tokens" value="BOR" />
+        </module>        
 
          <!-- Example of sevntu.checkstyle Check usage -->
          <!-- <module name="NestedSwitchCheck"/> -->
