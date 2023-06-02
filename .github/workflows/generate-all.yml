@@ -17,7 +17,7 @@ jobs:
   run-commit-reports:
     uses: ./.github/workflows/commit-reports.yml
     with:
-      # change this for report generation
+      # change this for report generation m
       patch-branch: M5
     needs: [
       run-generate-antlr-regression-report,
