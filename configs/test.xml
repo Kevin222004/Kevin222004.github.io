@@ -22,7 +22,25 @@
          <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
 
-        <module name="UnusedLocalVariable"/>
+        <module name="FinalLocalVariable">
+            <property name="id" value="FinalLocalVariable1" />
+        </module>
+
+        <module name="FinalLocalVariable">
+            <property name="id" value="FinalLocalVariable2" />
+            <property name="validateEnhancedForLoopVariable" value="true" />
+        </module>
+
+        <module name="FinalLocalVariable">
+            <property name="id" value="FinalLocalVariable3" />
+            <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
+        </module>
+        
+        <module name="FinalLocalVariable">
+            <property name="id" value="FinalLocalVariable4" />
+            <property name="validateEnhancedForLoopVariable" value="true" />
+            <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
+        </module>
 
          <!-- Example of sevntu.checkstyle Check usage -->
          <!-- <module name="NestedSwitchCheck"/> -->
