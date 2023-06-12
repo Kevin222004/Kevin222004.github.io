@@ -22,7 +22,21 @@
          <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
 
-        <module name="UnusedLocalVariable"/>
+        <module name="MultipleVariableDeclarations">
+            <property name="id" value="MultipleVariableDeclarations" />
+        </module>
+
+<!--        <module name="MultipleStringLiterals">-->
+<!--            <property name="allowedDuplicates" value="2"/>-->
+<!--            <property name="id" value="MultipleStringLiterals2" />-->
+<!--        </module>-->
+
+<!--        <module name="MultipleStringLiterals">-->
+<!--            <property name="ignoreStringsRegexp" value='^(("")|(", "))$'/>-->
+<!--            <property name="id" value="MultipleStringLiterals3" />-->
+<!--        </module>-->
+
+
 
          <!-- Example of sevntu.checkstyle Check usage -->
          <!-- <module name="NestedSwitchCheck"/> -->
