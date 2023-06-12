@@ -20,9 +20,23 @@
     <module name="TreeWalker">
          <!-- Example of checkstyle Check usage -->
          <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
-         <module name="ThrowsCount">
-             <property name="max" value="20000000"/>
-         </module>
+
+
+        <module name="MultipleVariableDeclarations">
+            <property name="id" value="MultipleVariableDeclarations" />
+        </module>
+
+<!--        <module name="MultipleStringLiterals">-->
+<!--            <property name="allowedDuplicates" value="2"/>-->
+<!--            <property name="id" value="MultipleStringLiterals2" />-->
+<!--        </module>-->
+
+<!--        <module name="MultipleStringLiterals">-->
+<!--            <property name="ignoreStringsRegexp" value='^(("")|(", "))$'/>-->
+<!--            <property name="id" value="MultipleStringLiterals3" />-->
+<!--        </module>-->
+
+
 
          <!-- Example of sevntu.checkstyle Check usage -->
          <!-- <module name="NestedSwitchCheck"/> -->
