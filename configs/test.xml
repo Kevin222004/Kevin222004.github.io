@@ -22,7 +22,15 @@
          <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
 
-        <module name="UnusedLocalVariable"/>
+        <module name="OneStatementPerLine">
+            <property name="id" value="OneStatementPerLine1" />
+        </module>
+
+        <module name="OneStatementPerLine">
+            <property name="id" value="OneStatementPerLine2" />
+            <property name="treatTryResourcesAsStatement" value="true" />
+        </module>
+
 
          <!-- Example of sevntu.checkstyle Check usage -->
          <!-- <module name="NestedSwitchCheck"/> -->
@@ -41,8 +49,8 @@
     -->
 
     <!-- as we run on regression even on non-compiled files we need to skip exceptions on them -->
-    <module name="SuppressionSingleFilter">
+    <!-- <module name="SuppressionSingleFilter">
       <property name="message" value="Exception occurred while parsing"/>
       <property name="checks" value="Checker"/>
-    </module>
+    </module> -->
 </module>
