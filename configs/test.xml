@@ -10,7 +10,7 @@
     <property name="severity" value="warning"/>
 
     <!-- haltOnException is required for exception fixes and reporting of all exceptions -->
-    <property name="haltOnException" value="false"/>
+    <property name="haltOnException" value="true"/>
 
     <!-- BeforeExecutionFileFilters is required for sources of java9 -->
     <module name="BeforeExecutionExclusionFileFilter">
