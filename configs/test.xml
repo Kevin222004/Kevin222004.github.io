@@ -63,4 +63,8 @@
       <property name="message" value="Exception occurred while parsing"/>
       <property name="checks" value="Checker"/>
     </module>
+
+    <!-- Increase the maximum heap size to 8GB -->
+    <property name="javaMaxHeapSize" value="8g"/>
+
 </module>
