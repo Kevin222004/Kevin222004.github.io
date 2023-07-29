@@ -15,7 +15,7 @@ jobs:
       ROOT_DIR: /__w/Kevin222004.github.io/Kevin222004.github.io
 
       ## change these for report generation
-      PATCH_BRANCH: dtc
+      PATCH_BRANCH: com1
       PROJECTS_FILE: test-projects.properties
 
     strategy:
@@ -23,15 +23,17 @@ jobs:
         # use config name with no '.xml' extension
         # generate list with: 'for f in $(find configs -name '*.xml'); do echo " - \"$(echo $f | cut -d '/' -f 2 | cut -d '.' -f 1)\""; done'
         config_name:
-          - "test"
-#          - "part1"
-#          - "part2"
-#          - "part3"
-#          - "part4"
-#          - "part5"
-#          - "part6"
-#          - "sevntu-check-regression_part_1"
-#          - "sevntu-check-regression_part_2"
+          # - "test"
+        #  - "part1"
+        #  - "part2"
+        #  - "part3"
+        #  - "part4"
+        #  - "part5"
+        #  - "part6"
+        #  - "sevntu-check-regression_part_1"
+        #  - "sevntu-check-regression_part_2"
+         - "checks-nonjavadoc-error"
+         - "checks-only-javadoc-error"
 
     steps:
       - name: Checkout
