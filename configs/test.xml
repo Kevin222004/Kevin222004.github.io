@@ -21,30 +21,82 @@
         <!-- Example of checkstyle Check usage -->
         <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
-    <module name="DescendantToken">
-        <property name="id" value="1"/>
-    </module>
-        
-     <module name="DescendantToken">
-        <property name="id" value="4"/>
-         <property name="limitedTokens" value=""/>
-    </module>   
-
-    <module name="DescendantToken">
-  <property name="tokens" value="LITERAL_SWITCH"/>
-        <property name="id" value="2"/>
-  <property name="maximumDepth" value="2"/>
-  <property name="limitedTokens" value="LITERAL_DEFAULT"/>
-  <property name="minimumNumber" value="1"/>
+<module name="DeclarationOrder">
+    <property name="id" value="1"/>
 </module>
 
-<module name="DescendantToken">
-    <property name="limitedTokens" value=""/>
-  <property name="tokens" value="LITERAL_SWITCH"/>
+<module name="DeclarationOrder">
+    <property name="ignoreConstructors" value="true"/>
+    <property name="ignoreModifiers" value="true"/>
+    <property name="id" value="2"/>
+</module>
+
+<module name="FinalLocalVariable">
+      <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
     <property name="id" value="3"/>
-  <property name="limitedTokens" value="LITERAL_SWITCH"/>
-  <property name="maximumNumber" value="0"/>
-  <property name="minimumDepth" value="1"/>
+</module>
+
+<module name="FinalLocalVariable">
+    <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
+    <property name="validateEnhancedForLoopVariable" value="true"/>
+    <property name="id" value="4"/>
+</module>
+
+<module name="ExplicitInitialization">
+    <property name="id" value="5"/>
+</module>
+
+<module name="ExplicitInitialization">
+      <property name="onlyObjectReferences" value="true"/>
+    <property name="id" value="6"/>
+</module>
+
+        <module name="HiddenField">
+            <property name="id" value="HiddenField1" />
+        </module>
+
+        <module name="HiddenField">
+            <property name="id" value="HiddenField2" />
+            <property name="ignoreConstructorParameter" value="true" />
+        </module>
+
+        <module name="HiddenField">
+            <property name="id" value="HiddenField3" />
+            <property name="ignoreSetter" value="true" />
+        </module>
+
+        <module name="HiddenField">
+            <property name="id" value="HiddenField4" />
+            <property name="ignoreAbstractMethods" value="true" />
+        </module>
+
+        <module name="HiddenField">
+            <property name="id" value="HiddenField5" />
+            <property name="ignoreAbstractMethods" value="true" />
+            <property name="setterCanReturnItsClass" value="true" />
+            <property name="ignoreSetter" value="true" />
+            <property name="ignoreConstructorParameter" value="true" />
+        </module>
+
+        <module name="LocalFinalVariableName">
+            <property name="id" value="LocalFinalVariableName1" />
+        </module>
+<module name="LocalFinalVariableName">
+    <property name="id" value="LocalFinalVariableName1" />
+  <property name="format" value="^[A-Z][A-Z0-9]*$"/>
+  <property name="tokens" value="PARAMETER_DEF,RESOURCE"/>
+</module>
+
+
+        <module name="MemberName">
+            <property name="id" value="MemberName1" />
+        </module>
+
+        <module name="MemberName">
+  <property name="format" value="^m[A-Z][a-zA-Z0-9]*$"/>
+            <property name="id" value="MemberName2" />
+  <property name="applyToProtected" value="false"/>
+  <property name="applyToPackage" value="false"/>
 </module>
 
         <!-- Example of sevntu.checkstyle Check usage -->
