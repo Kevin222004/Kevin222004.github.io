@@ -21,31 +21,55 @@
         <!-- Example of checkstyle Check usage -->
         <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
-    <module name="DescendantToken">
-        <property name="id" value="1"/>
-    </module>
-        
-     <module name="DescendantToken">
-        <property name="id" value="4"/>
-         <property name="limitedTokens" value=""/>
-    </module>   
 
-    <module name="DescendantToken">
-  <property name="tokens" value="LITERAL_SWITCH"/>
-        <property name="id" value="2"/>
-  <property name="maximumDepth" value="2"/>
-  <property name="limitedTokens" value="LITERAL_DEFAULT"/>
-  <property name="minimumNumber" value="1"/>
-</module>
+        <module name="SeparatorWrap">
+            <property name="id" value="SeparatorWrap1"/>
+        </module>
 
-<module name="DescendantToken">
-    <property name="limitedTokens" value=""/>
-  <property name="tokens" value="LITERAL_SWITCH"/>
-    <property name="id" value="3"/>
-  <property name="limitedTokens" value="LITERAL_SWITCH"/>
-  <property name="maximumNumber" value="0"/>
-  <property name="minimumDepth" value="1"/>
-</module>
+        <module name="SeparatorWrap">
+            <property name="tokens" value="DOT, COMMA, SEMI, ELLIPSIS, AT, LPAREN , RPAREN, ARRAY_DECLARATOR, RBRACK, METHOD_REF"/>
+            <property name="id" value="SeparatorWrap2"/>
+        </module>
+
+        <module name="SeparatorWrap">
+            <property name="id" value="SeparatorWrap3"/>
+            <property name="option" value="nl"/>
+        </module>
+
+        <module name="SeparatorWrap">
+            <property name="option" value="nl"/>
+            <property name="tokens" value="DOT, COMMA, SEMI, ELLIPSIS, AT, LPAREN , RPAREN, ARRAY_DECLARATOR, RBRACK, METHOD_REF"/>
+            <property name="id" value="SeparatorWrap4"/>
+        </module>
+
+
+
+
+<!--        <module name="MissingJavadocMethod">-->
+<!--            <property name="id" value="MissingJavadocMethod2"/>-->
+<!--            <property name="allowMissingPropertyJavadoc" value="true"/>-->
+<!--        </module>-->
+
+<!--        <module name="MissingJavadocMethod">-->
+<!--            <property name="id" value="MissingJavadocMethod3"/>-->
+<!--            <property name="allowMissingPropertyJavadoc" value="true"/>-->
+<!--        </module>-->
+
+<!--        <module name="MissingJavadocMethod">-->
+<!--            <property name="id" value="MissingJavadocMethod4"/>-->
+<!--            <property name="ignoreMethodNamesRegex" value=".*"/>-->
+<!--        </module>-->
+
+<!--        <module name="MissingJavadocMethod">-->
+<!--            <property name="id" value="MissingJavadocMethod5"/>-->
+<!--            <property name="scope" value="private"/>-->
+<!--        </module>-->
+
+<!--        <module name="MissingJavadocMethod">-->
+<!--            <property name="id" value="MissingJavadocMethod6"/>-->
+<!--            <property name="scope" value="private"/>-->
+<!--            <property name="excludeScope" value="protected"/>-->
+<!--        </module>-->
 
         <!-- Example of sevntu.checkstyle Check usage -->
         <!-- <module name="NestedSwitchCheck"/> -->
