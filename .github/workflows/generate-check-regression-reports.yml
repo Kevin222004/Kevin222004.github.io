@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     container: checkstyle/jdk-11-groovy-git-mvn:11.0.13__3.0.9__2.25.1__3.6.3
     env:
-      MAVEN_OPTS: -Xmx5g
-      JAVA_OPTS: -Xmx5g
+      MAVEN_OPTS: -Xmx16g
+      JAVA_OPTS: -Xmx16g
       CHECKSTYLE_DIRECTORY: checkstyle
       ROOT_DIR: /__w/Kevin222004.github.io/Kevin222004.github.io
 
