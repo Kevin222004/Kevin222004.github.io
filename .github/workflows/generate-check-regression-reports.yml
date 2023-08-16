@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     container: checkstyle/jdk-11-groovy-git-mvn:11.0.13__3.0.9__2.25.1__3.6.3
     env:
-      MAVEN_OPTS: -Xmx4096m
-      JAVA_OPTS: -Xmx4096m
+      MAVEN_OPTS: -Xmx{{ maximum_available_memory }}m
+      JAVA_OPTS: -Xmx{{ maximum_available_memory }}m
       CHECKSTYLE_DIRECTORY: checkstyle
       ROOT_DIR: /__w/Kevin222004.github.io/Kevin222004.github.io
 
       ## change these for report generation
-      PATCH_BRANCH: dtc
+      PATCH_BRANCH: su2
       PROJECTS_FILE: test-projects.properties
 
     strategy:

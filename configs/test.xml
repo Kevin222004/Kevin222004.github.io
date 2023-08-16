@@ -21,32 +21,192 @@
         <!-- Example of checkstyle Check usage -->
         <!-- PLEASE CHANGE IT TO CHECK YOU ARE TESTING !!!! -->
 
-    <module name="DescendantToken">
-        <property name="id" value="1"/>
-    </module>
-        
-     <module name="DescendantToken">
-        <property name="id" value="4"/>
-         <property name="limitedTokens" value=""/>
-    </module>   
+        <module name="HiddenField">
+            <property name="id" value="HiddenField1"/>
+        </module>
 
-    <module name="DescendantToken">
-  <property name="tokens" value="LITERAL_SWITCH"/>
-        <property name="id" value="2"/>
-  <property name="maximumDepth" value="2"/>
-  <property name="limitedTokens" value="LITERAL_DEFAULT"/>
-  <property name="minimumNumber" value="1"/>
-</module>
+        <module name="HiddenField">
+            <property name="id" value="HiddenField2"/>
+            <property name="ignoreConstructorParameter" value="true"/>
+        </module>
 
-<module name="DescendantToken">
-    <property name="limitedTokens" value=""/>
-  <property name="tokens" value="LITERAL_SWITCH"/>
-    <property name="id" value="3"/>
-  <property name="limitedTokens" value="LITERAL_SWITCH"/>
-  <property name="maximumNumber" value="0"/>
-  <property name="minimumDepth" value="1"/>
-</module>
+        <module name="HiddenField">
+            <property name="id" value="HiddenField3"/>
+            <property name="ignoreSetter" value="true"/>
+        </module>
 
+        <module name="HiddenField">
+            <property name="id" value="HiddenField4"/>
+            <property name="ignoreAbstractMethods" value="true"/>
+        </module>
+
+        <module name="HiddenField">
+            <property name="id" value="HiddenField5"/>
+            <property name="ignoreAbstractMethods" value="true"/>
+            <property name="setterCanReturnItsClass" value="true"/>
+            <property name="ignoreSetter" value="true"/>
+            <property name="ignoreConstructorParameter" value="true"/>
+        </module>
+
+        <module name="HiddenField">
+            <property name="id" value="HiddenField3"/>
+            <property name="ignoreSetter" value="true"/>
+        </module>
+
+        <module name="ClassMemberImpliedModifier">
+            <property name="id" value="ClassMemberImpliedModifier1"/>
+        </module>
+
+        <module name="ClassMemberImpliedModifier">
+            <property name="violateImpliedStaticOnNestedRecord" value="false"/>
+            <property name="violateImpliedStaticOnNestedInterface" value="false"/>
+            <property name="violateImpliedStaticOnNestedEnum" value="false"/>
+            <property name="id" value="ClassMemberImpliedModifier2"/>
+        </module>
+
+        <module name="RequireThis">
+            <property name="id" value="RequireThis1"/>
+        </module>
+
+        <module name="RequireThis">
+            <property name="checkMethods" value="false"/>
+            <property name="checkFields" value="false"/>
+            <property name="validateOnlyOverlapping" value="false"/>
+            <property name="id" value="RequireThis2"/>
+        </module>
+
+        <module name="DesignForExtension">
+            <property name="id" value="DesignForExtension1"/>
+        </module>
+
+        <module name="JavadocStyle">
+            <property name="id" value="JavadocStyle1"/>
+        </module>
+
+        <module name="JavadocStyle">
+            <property name="id" value="JavadocStyle3"/>
+            <property name="scope" value="public"/>
+        </module>
+
+        <module name="JavadocStyle">
+            <property name="id" value="JavadocStyle2"/>
+            <property name="scope" value="private"/>
+            <property name="excludeScope" value="package"/>
+        </module>
+
+        <module name="JavadocStyle">
+            <property name="id" value="JavadocStyle4"/>
+            <property name="checkFirstSentence" value="false"/>
+        </module>
+
+        <module name="JavadocStyle">
+            <property name="checkHtml" value="false"/>
+            <property name="id" value="JavadocStyle4"/>
+        </module>
+
+        <module name="JavadocType">
+            <property name="id" value="JavadocType1"/>
+        </module>
+
+        <module name="JavadocType">
+            <property name="scope" value="public"/>
+
+            <property name="id" value="JavadocType2"/>
+        </module>
+
+        <module name="JavadocType">
+            <property name="scope" value="private"/>
+            <property name="id" value="JavadocType3"/>
+            <property name="excludeScope" value="package"/>
+        </module>
+        <module name="JavadocType">
+            <property name="id" value="JavadocType4"/>
+            <property name="allowMissingParamTags" value="true"/>
+        </module>
+
+        <module name="JavadocType">
+            <property name="id" value="JavadocType5"/>
+            <property name="allowUnknownTags" value="true"/>
+        </module>
+
+        <module name="JavadocType">
+            <property name="id" value="JavadocType6"/>
+            <property name="allowedAnnotations" value="SpringBootApplication,Configuration"/>
+        </module>
+
+        <module name="JavadocVariable">
+            <property name="id" value="JavadocVariable1"/>
+        </module>
+
+        <module name="JavadocVariable">
+            <property name="id" value="JavadocVariable2"/>
+            <property name="scope" value="public"/>
+        </module>
+
+        <module name="JavadocVariable">
+            <property name="id" value="JavadocVariable3"/>
+            <property name="scope" value="private"/>
+            <property name="excludeScope" value="protected"/>
+        </module>
+
+        <module name="JavadocVariable">
+            <property name="id" value="JavadocVariable4"/>
+            <property name="ignoreNamePattern" value="log|logger"/>
+        </module>
+
+        <module name="MissingJavadocType">
+            <property name="id" value="MJT1"/>
+        </module>
+
+        <module name="MissingJavadocType">
+            <property name="id" value="MJT2"/>
+            <property name="scope" value="private"/>
+        </module>
+
+        <module name="MissingJavadocType">
+            <property name="id" value="MJT3"/>
+            <property name="scope" value="private"/>
+            <property name="excludeScope" value="package"/>
+        </module>
+
+        <module name="MissingJavadocType">
+            <property name="id" value="MJT3"/>
+            <property name="skipAnnotations" value="SpringBootApplication,Configuration"/>
+        </module>
+
+        <module name="MissingJavadocType">
+            <property name="id" value="MJT4"/>
+            <property name="skipAnnotations" value="Annotation,MyClass.Annotation"/>
+        </module>
+        <module name="MissingJavadocMethod">
+            <property name="id" value="MissingJavadocMethod1"/>
+        </module>
+
+        <module name="MissingJavadocMethod">
+            <property name="id" value="MissingJavadocMethod2"/>
+            <property name="allowMissingPropertyJavadoc" value="true"/>
+        </module>
+
+        <module name="MissingJavadocMethod">
+            <property name="id" value="MissingJavadocMethod3"/>
+            <property name="allowMissingPropertyJavadoc" value="true"/>
+        </module>
+
+        <module name="MissingJavadocMethod">
+            <property name="id" value="MissingJavadocMethod4"/>
+            <property name="ignoreMethodNamesRegex" value=".*"/>
+        </module>
+
+        <module name="MissingJavadocMethod">
+            <property name="id" value="MissingJavadocMethod5"/>
+            <property name="scope" value="private"/>
+        </module>
+
+        <module name="MissingJavadocMethod">
+            <property name="id" value="MissingJavadocMethod6"/>
+            <property name="scope" value="private"/>
+            <property name="excludeScope" value="protected"/>
+        </module>
         <!-- Example of sevntu.checkstyle Check usage -->
         <!-- <module name="NestedSwitchCheck"/> -->
 
