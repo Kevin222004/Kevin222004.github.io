@@ -23,8 +23,8 @@ jobs:
         # use config name with no '.xml' extension
         # generate list with: 'for f in $(find configs -name '*.xml'); do echo " - \"$(echo $f | cut -d '/' -f 2 | cut -d '.' -f 1)\""; done'
         config_name:
-          - "checks-nonjavadoc-error.xml"
-          - "checks-only-javadoc-error.xml"
+          - "checks-nonjavadoc-error"
+          - "checks-only-javadoc-error"
 #          - "part1"
 #          - "part2"
 #          - "part3"
